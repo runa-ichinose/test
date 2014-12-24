@@ -1,0 +1,56 @@
+$default-theme-color:red;
+$divcolor:blue;
+		
+
+p.test1{
+font-weight:bold;
+font-size:3em;
+color:blue;
+}
+
+body{
+	
+	background:linear-gradient($default-theme-color,yellow);
+}
+
+h4{
+	color:white;
+}
+
+$default-theme-color: lighten(green, 15);
+ 
+p.test {
+font-weight: bold;
+font-size: 3em;
+color: blue;
+background-color: $default-theme-color;
+}
+ 
+@mixin my-button($color) {
+$dark-color: darken($color, 10);
+padding: 20px;
+background: linear-gradient($color, $dark-color);
+color: white;
+text-decoration: none;
+border-radius: 5px;
+&:hover {
+$light-color: lighten($color, 10);
+$light-dark-color: lighten($dark-color, 10);
+background: linear-gradient($light-color, $light-dark-color);
+}
+}
+ 
+a.custom-btn {
+@include my-button($default-theme-color);
+
+}
+ 
+a.custom-btn-2 {
+@include my-button(lightblue);
+color:red;
+}
+
+a.custom-btn-3 {
+@include my-button(yellow);
+}
+	
