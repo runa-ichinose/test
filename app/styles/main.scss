@@ -1,0 +1,272 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+a:link { color: green; }
+a:visited { color: green; }
+
+
+#wrapper {
+margin: auto;
+}
+.img1{
+margin-bottom:10px;
+}
+.fsize8{
+	font-size: 10px;
+	float:left;
+	margin-left:2px;	
+}
+.fsize8-2 {
+	font-size: 10px;
+	color:green;
+}
+
+#header {
+	 background-image:url("../images/02.jpg");
+	 width:900px;
+	 height:120px;	 
+}
+
+.floatl {
+float:left;
+}
+
+.margin12px {
+padding-left:12px;
+}
+
+.navi{ 
+width:900px;
+height:40px;
+
+}
+
+ul li{
+width:100px;
+height:40px;
+}
+
+#mainpic{
+margin-top:2em;
+margin-bottom:1em;
+width:900px;
+height:600px;
+}
+
+#mainpic2box {
+width:900px;
+height:60px;
+border-style:none;
+border-width:none;
+background-repeat:no-repeat;
+margin:0 1em 0 1em;
+background-image:url("../images/bg_top_banners.gif");
+background:repeat;
+a{
+float:left;
+}
+}
+
+.clearfix {
+  min-height: 1px;
+}
+.clearfix:after {
+  content: ".";  
+  display: block;  
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
+
+.float-left {
+	float: left;
+	margin-left: 1px;
+}
+
+
+
+
+#information{
+	float:left;
+	background-image: url(../images/subcolumn_bg.gif);
+	background-repeat: repeat-y;
+	margin-left: 20px;
+}
+
+#information-header {
+	background-image: url(../images/topinfo.gif);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 440px;
+}
+
+#information-main {
+	background-image: url(../images/subcolumn_bg.gif);
+	background-repeat: repeat-y;
+	width: 440px; 
+	height:38px;
+p {
+	background-image: url(../images/green_square_arrow.gif);
+	background-repeat: no-repeat;
+	background-position:10px 8px;
+	background-color:#FFFFA1;
+
+	font-size: 12px;
+	border: 1px solid #005027;
+	
+	margin-left:30px;
+	margin-right:30px;
+	
+	
+	padding-top:5px;
+	padding-left:30px;
+	padding-bottom:5px;
+
+}
+}
+
+#information-main-item {
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #0F0;
+}
+
+#information-main-item ul {
+	padding-left:0px;
+	padding-right:10px;
+	margin-left:10px;
+	margin-right:10px;
+	float:left;
+}
+
+#information-main-item li {
+	list-style:none;
+}
+
+.floatleft {	
+	float:left;
+}
+
+#information-header_2 {
+	float: right;
+	margin-top: 5px;
+}
+
+#information-header_2 img {
+	margin-right: 10px;
+	margin-left: 5px;
+}
+
+
+
+
+#information-main-item .float-left {
+	float: left;
+	margin-left: 1px;
+}
+.padding-right {
+	padding-right: 30px;
+//	margin-left: 10px;
+}
+.list-item-mark {
+	background-image: url(../images/green_arrow.gif);
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #F90;
+
+	padding-bottom: 10px;
+	margin-top: 10px;
+	list-style:none;
+}
+
+
+#information-footer {
+	background-image: url(../images/subcolumn_bottom.gif);
+	background-repeat: no-repeat;
+	width: 440px;
+	height: 8px;
+
+//	padding-top: 50px;
+}
+
+
+
+
+
+
+#flobox {
+	font-family: "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;
+	color: #FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #005027;
+	border-right-color: #005027;
+	border-bottom-color: #005027;
+	border-left-color: #005027;
+	text-align: center;
+	width: 100%;
+	font-size: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 16px;
+	background-color: #005027;
+	height: 16px;
+	clear: both;
+	margin-bottom: 8px;
+flobox p {
+	font-family: "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;
+	font-size: 10px;
+	line-height: normal;
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	margin:auto;
+}
+}
+.img9 {
+	float: left;
+	width: 900px;
+	margin:auto;
+	white-space: nowrap;
+}
+#footer .img9 img {
+	float: left;
+	margin-right: 6px;
+	margin-left: 6px;
+	margin-bottom: 24px;
+}
+#fcontainer {
+	width: 100%;
+	_width: 1000px;
+	padding-left: 166px;
+	_padding-left:16px;
+	padding-top: 8px;
+}
+.bottom6 {
+	margin-top: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
