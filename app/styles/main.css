@@ -1,16 +1,12 @@
-/*
-Error: File to import not found or unreadable: bootstrap-sass-official/assets/stylesheets/bootstrap.scss.
-       Load path: C:/test/app
-        on line 3 of styles\main.scss
 
-1: $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-2: // bower:scss
-3: @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
-4: // endbower
-5:  @import "custom";
-6: 
-7: .browsehappy {
-8:   margin: 0.2em 0;
+ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+ // bower:scss
+ @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+  @import "custom";
+ 
+ .browsehappy {
+   margin: 0.2em 0;
 
 Backtrace:
 styles\main.scss:3
@@ -47,7 +43,7 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.7/lib/sass/exec/base.rb:19:in `pars
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.7/bin/sass:13:in `<top (required)>'
 C:/Ruby193/bin/sass:23:in `load'
 C:/Ruby193/bin/sass:23:in `<main>'
-*/
+
 body:before {
   white-space: pre;
   font-family: monospace;
