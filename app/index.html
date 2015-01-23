@@ -4,6 +4,34 @@
 <title>神戸総合運動公園</title>
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="styles/main.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript"> 
+02 
+$(function(){ 
+03 
+    $('a[href^=#]').click(function(){ 
+
+04 
+        var speed = 250; 
+
+05 
+        var href= $(this).attr("href"); 
+
+06 
+        var target = $(href == "#" || href == "" ? 'html' : href); 
+
+07 
+        var position = target.offset().top; 
+08 
+        $("html, body").animate({scrollTop:position}, speed, "swing"); 
+09 
+        return false; 
+10 
+    }); 
+11 
+}); 
+12 
+</script>
 </head>
 <body>
 <div class="wrapper">
@@ -37,27 +65,25 @@
 <a href="#"><img src="images/bnr_enchari.gif" class="img-responsive" alt="Responsive image"></a>　<a href="#"><img src="images/bnr_flower.gif" class="img-responsive" alt="Responsive image"></a>　<a href="#"><img src="images/bnr_volunteer.gif" class="img-responsive" alt="Responsive image"></a>　<a href="#"><img src="images/bnr_onlooking.gif" class="img-responsive" alt="Responsive image"></a>
 
 </div><!-- mainpic2 -->
-<div id="container"> 
-  <div id="information">
- 
-                <div id="information-header">
-                  <div id="information-header_2">
+<div id="container2"> 
+  <div id="leftbox">
+ <div class="information-header"><!-- top -->  <div class="information-header_2">
                  
                         <img src="images/rss.gif" width="35" height="15" alt="RSS" > 
-                        <img src="images/topinfo_list_btn.gif" width="48" height="19" alt="一覧" ><br>
+                        <img src="images/topinfo_list_btn.gif" width="48" height="19" alt="一覧" ><br><!-- infomationheader2 -->
                         
-        <div class="clearfix" id="information-main-item">
-           	 <ul class="nav nav-tabs floatl">
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_02.gif" width="55" height="17" alt="すべて表示" ></a></li>
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_04.gif" width="61" height="17" alt="トピックス" ></a></li>
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_06.gif" width="51" height="17" alt="お願い" ></a></li>
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_08.gif" width="60" height="17" alt="施設情報" ></a></li>
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_10.gif" width="56" height="17" alt="スクール" ></a></li>
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_12.gif" width="56" height="17" alt="イベント" ></a></li>
-                            <li class="floatl"><a href="#"><img src="images/nav_topinfo_14.gif" width="65" height="17" alt="ボランティア"></a></li>
-					</ul>
-				</div>	<!-- <div class="clearfix" id="information-main-item"> -->
-     <ul class="padding-right">
+       <div class="information"><!-- middle -->       
+                <div class="infonavi clearfix">
+<ul><li class="li01"><a href="#">すべて表示</a></li>
+<li class="li02"><a href="#">トピックス</a></li>
+<li class="li03"><a href="#">お願い</a></li>
+<li class="li04"><a href="#">施設情報</a></li>
+<li class="li05"><a href="#">スクール</a></li>
+<li class="li06"><a href="#">イベント</a></li>
+<li class="li07"><a href="#">ボランティア</a></li>
+</ul> 
+				</div>	<!--infonavi-->
+     <ul class="padding-right ">
                      <li class="list-item-mark"><a href="#">神戸総合運動公園「駅前イルミネーション」</a></li>
                      <li class="list-item-mark"><a href="#">「神戸シティリレーマラソン2015」の開催</a></li>
                      <li class="list-item-mark"><a href="#">「JAPAN EKIDEN TOUR 2014-2015 KOBE」の開催</a></li>
@@ -68,23 +94,14 @@
                 </ul>
 
 				<p class="box1"><a href="#" >12月のイベントポスターPDFダウンロード</a></p>
-                        <div id="information-footer">
-                    </div><!-- infomation-header -->
-                </div><!-- infomation-header2 -->
- </div><!-- infomation-main-item -->
- 	
-               		         	</div><!-- infomation-footer -->
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+                        
+        <div class="information-footer"><!-- bottom --> 
+      
+          
+	</div><!-- infomation-footer -->
+	 </div><!-- infomation-header-top -->
+	</div><!-- infomation-middle -->
+</div><!-- leftbox -->
  
  
  
@@ -93,15 +110,25 @@
  
  
  
-
- <div id="flobox">
-   <p>Copyright (C) 公益財団法人神戸市公園緑化協会 公園部 神戸市総合運動公園 All Rights Reserved</p></div><!--flobox-->
- 
- <p class="img9">　<a href="#"><img src="images/wakohteniss_small.gif" width="73" height="38" alt="img01" class="bottom6"></a>　<a href="#"><img src="images/mizuno_small.jpg" width="90" height="32" alt="img02"></a>　<a href="#"><img src="images/athlete_small.gif" width="90" height="32" alt="img03"></a>　<a href="#"><img src="images/bnr_universportsclub.gif" width="88" height="31" alt="img04"></a>　<a href="#"><img src="images/bnr_buffaloes.gif" width="88" height="31" alt="img05"></a>　<a href="#"><img src="images/bnr_vissel.gif" width="88" height="31" alt="img06"></a>　<a href="#"><img src="images/bnr_deucao.gif" width="88" height="31" alt="img07"></a>　<a href="#"><img src="images/bnr_inac.gif" width="88" height="31" alt="img08"></a>　<a href="#"><img src="images/bnr_hyogo-swingsmileys.jpg" width="88" height="31" alt="img09"></a></p>
+ </div></div>
  
  
  
-  </div><!--footer-->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!--footer-->
 </div><!-- wrapper -->
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
