@@ -6,12 +6,12 @@ a:visited { color: green; }
 
 #wrapper {
 margin: auto;
-width:900px;
+width:1200px;
 }
-.img1{
+.img1 {
 margin-bottom:10px;
 }
-.fsize8{
+.fsize8 {
 	font-size: 10px;
 	float:left;
 	margin-left:2px;	
@@ -35,18 +35,18 @@ float:left;
 padding-left:12px;
 }
 
-.navi{ 
+.navi { 
 width:900px;
 height:40px;
 
 }
 
-ul li{
+ul li {
 width:100px;
 height:40px;
 }
 
-#mainpic{
+#mainpic {
 margin-top:2em;
 margin-bottom:1em;
 width:900px;
@@ -61,34 +61,36 @@ border-width:none;
 background-repeat:no-repeat;
 margin:0 1em 0 1em;
 background-image:url("../images/bg_top_banners.gif");
-background:repeat;
+background: repeat;
+}
 a{
 float:left;
 }
-}
 
-#container2{
+
+#container2 {
 	width:900px;
-	clear:both;
 	}
 
 
 
-.clearfix {
-  min-height: 1px;
-}
 .clearfix:after {
-  content: ".";  
-  display: block;  
+  content: ".";  /* æ–°ã—ã„è¦ç´ ã‚’ä½œã‚‹ */
+  display: block;  /* ãƒ–ãƒ­ãƒƒã‚¯ãƒ¬ãƒ™ãƒ«è¦ç´ ã« */
   clear: both;
   height: 0;
   visibility: hidden;
 }
-html .clearfix {
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
   height: 1px;
-  /*\*//*/
   height: auto;
   overflow: hidden;
+
 }
 
 
@@ -96,10 +98,11 @@ html .clearfix {
 	float: left;
 	margin-left: 1px;
 }
+
 #leftbox {
-width:440px;
-margin-top:14px;
-float:left;
+	width:440px;
+	margin-top:14px;
+	float:left;
 }
 
 
@@ -117,7 +120,6 @@ float:left;
 	background-image: url(../images/subcolumn_bg.gif);
 	background-repeat: repeat-y;
 	width:440px;
-	margin-left: 20px;
 	float:left;
 
 }
@@ -151,13 +153,13 @@ float:left;
 
 
 
- .infonavi {
+.infonavi {
 	width: 440px;
-	margin-top:12px;
+	margin-top:16px;
 	margin-left:2em;
+	margin-bottom:12px;
 	}
-
- .infonavi ul li {
+.infonavi ul li {
 	list-style-type: none;
 	float: left;
 	background-position: bottom;
@@ -165,20 +167,18 @@ float:left;
 	width:auto;
 	}
 
-.infonavi ul{
-	white-space:nowrap;
+.infonavi ul {
+	white-space: nowrap;
 	padding: 0px;
-	
-}
-
-
- .infonavi a {
+	}
+.infonavi a {
 	display: block;
 	text-indent: -9999px;
-	text-decoration:none;
-	
-}
- .infonavi ul .li01 a{
+	text-decoration: none;
+	}
+
+
+.infonavi ul .li01 a{
 	background-image:url(../images/nav_topinfo_15.gif);
 	width:55px;
 	height:23px;
@@ -258,7 +258,6 @@ float:left;
 .clearboth{
 clear:both;
 }
-
 .padding-right {
 	padding-right: 30px;
 //	margin-left: 10px;
@@ -267,15 +266,14 @@ clear:both;
 	background-image: url(../images/green_arrow.gif);
 	background-repeat: no-repeat;
 	padding-left: 20px;
-	width:400px;
+	width: 400px;
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
 	border-bottom-color: #F90;
-	padding-bottom: 4px;
+	padding-bottom: 2px;
 	list-style:none;
 	margin-left:-1em;
 }
-
 
 
 
@@ -293,24 +291,27 @@ clear:both;
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
 	border-bottom-color: #F90;
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 	margin-top: 10px;
 	list-style:none;
 }
 
 .box1 {
-	border-style:solid;
-	width:400px;
+	border-style: solid;
+	width: 400px;
 	background:yellow;
-	border-width:1px;
-	margin-left:1em;
-	padding:2px;
-	padding-left:14px;
-	background-image:url(../images/green_square_arrow.gif);
-	background-repeat:no-repeat;
-	background-position:2px;
-}
-
+	border-width: 1px;
+	margin-left: 1em;
+	margin-top:14px;
+	padding: 12px;
+	padding-left: 14px;
+	background-image: url(../images/green_square_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 2px;
+		a {
+		margin-top:-10px;
+		}
+		}
 
 .bottom6 {
 	margin-top: -4px;
@@ -318,9 +319,13 @@ clear:both;
 
 
 
+
+
+
 #rightbox {
 	float: right;
 	width:440px;
+	margin-bottom:12em;
 }
 
 .boxoutsider {
@@ -340,12 +345,14 @@ clear:both;
 	height:8px;
 	background-repeat: no-repeat;
 	padding-bottom: 5px;
+	float:right;
 }
 .boxmiddler {
 	background-image: url(../images/subcolumn_bg.gif);
 	background-repeat: repeat-y;
 	width: 440px;
-	
+	float:right;
+	background-position:middle center;
 }
 .monthivent {
 	float: left;
@@ -353,6 +360,7 @@ clear:both;
 	width: 96px;
 	padding-top: 12px;
 	padding-left: 12px;
+	margin-right:16px;
 }
 .boxoutside1 {
 	background-image: url(../images/month_arrow.gif);
@@ -364,14 +372,14 @@ clear:both;
 	margin-left: 4px;
 	font-size: 12px;
 	font-style: normal;
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	padding-top: 2px;
 	padding-left: 8px;
 	padding-right: 28px;
 	margin-right: 4px;
 }
 .boxoutside1 p a {
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 12px;
 	line-height: normal;
 	color: #09F;
@@ -386,15 +394,14 @@ clear:both;
 	margin-left: 4px;
 	font-size: 12px;
 	font-style: normal;
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	padding-top: 2px;
 	padding-left: 8px;
 	padding-right: 28px;
 	margin-right: 4px;
-	_padding-right:12px;
 }
 .boxoutside2 p a {
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 12px;
 	line-height: normal;
 	color: #09F;
@@ -410,38 +417,38 @@ clear:both;
 	margin-left: 4px;
 	font-size: 12px;
 	font-style: normal;
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	padding-top: 2px;
 	padding-left: 8px;
 	padding-right: 28px;
-	_padding-right:12px;
 	margin-right: 8px;
-}
-.boxoutside3 p a {
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	p a {
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 12px;
 	line-height: normal;
 	color: #09F;
 	font-style: normal;
 }
+	}
 .sisetupotinon {
 	float: left;
 	margin-top: 12px;
 	margin-left: 4px;
-	margin-right: 4px;
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	margin-right: 6px;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 12px;
 	line-height: normal;
 }
+
 .go {
 	height: 16px;
 	width: 44px;
 	float: left;
 	background-position: center;
-	margin-top: 16px;
+	margin-top: 12px;
 }
-.boxoutsider .boxinsider .boxmiddler select {
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+.boxoutsider .boxinsider .boxmiddler {
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 12px;
 	line-height: normal;
 	font-style: normal;
@@ -456,7 +463,6 @@ clear:both;
 	background-position: left;
 	clear: both;
 	margin-left: 12px;
-	_margin-left:11px;
 	margin-right: 4px;
 }
 .iventbox {
@@ -464,65 +470,63 @@ clear:both;
 	width: 314px;
 	border: 1px solid #090;
 	margin-top: 12px;
-	padding-top: 4px;
-	_padding-left:34px;
+	padding-top: 8px;
+
+
 }
-.plink2 {
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+ .plink2 {
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 12px;
 	background-image: url(../images/green_square_arrow.gif);
 	background-repeat: no-repeat;
-	background-position: left 4px;
+	background-position: left 3px;
 	color: #09F;
-}
+	list-style:none;
+	white-space:nowrap;	
+	margin-left: -2em;
+	padding-left:18px;
+	}
 
-.boxoutsider .boxinsider .boxmiddler .iventbox ul li {
-	margin-left: -36px;
-	padding-left: 18px;
-	line-height: normal;
-	font-size: 12px;
-}
-.mainasumargin {
-	margin-left: -18px;
-	line-height: normal;
+.iventbox  ul li {
+	font-size: 12px;	
+	line-height:1em;
 }
 #rightbox .pdfimg {
 	float: right;
 	height: 50px;
 	width: 440px;
-	_margin-top: 1em;
-	margin-top: 5em;
-	margin-left: 2em;
+	margin-top: 18em;
+	margin-left: 6em;
 }
+
 #main2 {
-	clear: both;
-	width: 900px;
-	padding-top: 12px;
-	_margin-left:16px;
-}
-.nadeshiko {
-	float: left;
-	margin-top: 12px;
-	margin-bottom: 4px;
-}
-#main2 p {
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
-	font-size: 12px;
-	clear: both;
-}
-.bottom {
-	border-bottom-color: #BEA57F;
-	padding-bottom: 32px;
-}
-.top {
-	border-top-width: 1px;
-	border-top-style: dotted;
-	border-top-color: #BEA57F;
-	padding-top: 6px;
-	width: 100%;
+width: 900px;
+margin:auto;
+margin-left:106px;
+clear:both;
+ p{	
+ font-size:12px;
+ white-space:nowrap;
+ font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
+}	
 }
 
-.gototop {
-	text-indent: -9999px;
+.yado {
+width:900px;
+height:25px;
+margin-bottom:1em;
 }
 
+.nadeshiko{
+width:100px;
+height:35px;
+float:left;
+margin-bottom:10px;
+}
+
+.pborder {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #F90;
+	padding-bottom:2em;
+	}
