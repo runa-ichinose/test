@@ -1,8 +1,8 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
-a:link { color: green; }
-a:visited { color: green; }
-
+$a:link { color: #5bc0de; }
+$a:visited { color: #5bc0de; }
+$green {color:  #5cb85c; }
 
 #wrapper {
 margin: auto;
@@ -18,7 +18,7 @@ margin-bottom:10px;
 }
 .fsize8-2 {
 	font-size: 10px;
-	color:green;
+	color:$green;
 }
 
 #header {
@@ -169,12 +169,13 @@ float:left;
 
 .infonavi ul {
 	white-space: nowrap;
-	padding: 0px;
+	padding: 1px;
 	}
 .infonavi a {
 	display: block;
 	text-indent: -9999px;
 	text-decoration: none;
+	color: #5bc0de;
 	}
 
 
@@ -269,13 +270,14 @@ clear:both;
 	width: 400px;
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
-	border-bottom-color: #F90;
 	padding-bottom: 2px;
 	list-style:none;
 	margin-left:-1em;
+	margin-top: 10px;
+	a {
+	color:@brand-info;
+	}
 }
-
-
 
 .float-left {
 	float: left;
@@ -283,17 +285,6 @@ clear:both;
 }
 .padding-right {
 	padding-right: 30px;
-}
-.list-item-mark {
-	background-image: url(../images/green_arrow.gif);
-	background-repeat: no-repeat;
-	padding-left: 20px;
-	border-bottom-width: 1px;
-	border-bottom-style: dotted;
-	border-bottom-color: #F90;
-	padding-bottom: 4px;
-	margin-top: 10px;
-	list-style:none;
 }
 
 .box1 {
@@ -308,10 +299,10 @@ clear:both;
 	background-image: url(../images/green_square_arrow.gif);
 	background-repeat: no-repeat;
 	background-position: 2px;
-		a {
-		margin-top:-10px;
-		}
-		}
+	margin-top:-10px;
+	}
+
+
 
 .bottom6 {
 	margin-top: -4px;
@@ -480,7 +471,6 @@ clear:both;
 	background-image: url(../images/green_square_arrow.gif);
 	background-repeat: no-repeat;
 	background-position: left 3px;
-	color: #09F;
 	list-style:none;
 	white-space:nowrap;	
 	margin-left: -2em;
@@ -503,15 +493,20 @@ clear:both;
 width: 900px;
 margin:auto;
 margin-left:106px;
-clear:both;
- p{	
+ 	p {	
  font-size:12px;
+ color:#000000;
  white-space:nowrap;
  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}	
-}
+ white-space:nowrap;
+ 		a {
+ 			font-size:10px;
+ 			line-height:1em;
+	}
+		}
+			}
 
-.yado {
+	.yado {
 width:900px;
 height:25px;
 margin-bottom:1em;
@@ -525,8 +520,13 @@ margin-bottom:10px;
 }
 
 .pborder {
-	border-bottom-width: 1px;
+	border-bottom-width: 2px;
 	border-bottom-style: dotted;
 	border-bottom-color: #F90;
 	padding-bottom:2em;
 	}
+
+
+
+
+
